@@ -4,6 +4,7 @@ import { withTranslation, TFunction } from "react-i18next";
 import Container from "../../common/Container";
 import { SvgIcon } from "../../common/SvgIcon";
 import { Button } from "../../common/Button";
+import i18n from "i18next";
 import {
   HeaderSection,
   LogoContainer,
@@ -14,10 +15,16 @@ import {
   Label,
   Outline,
   Span,
+  Language,
+  LanguageSwitch,
+  LanguageSwitchContainer,
 } from "./styles";
 
 const Header = ({ t }: { t: TFunction }) => {
   const [visible, setVisibility] = useState(false);
+   const handleChange = (language: string) => {
+    i18n.changeLanguage(language);
+  };
 
   const toggleButton = () => {
     setVisibility(!visible);
@@ -49,6 +56,26 @@ const Header = ({ t }: { t: TFunction }) => {
           <Span>
             <Button>{t("Contact")}</Button>
           </Span>
+        </CustomNavLinkSmall>
+        <CustomNavLinkSmall>
+          <LanguageSwitchContainer>
+                          <LanguageSwitch onClick={() => handleChange("en")}>
+                            <SvgIcon
+                              src="united-states.svg"
+                              aria-label="homepage"
+                              width="30px"
+                              height="30px"
+                            />
+                          </LanguageSwitch>
+                          <LanguageSwitch onClick={() => handleChange("es")}>
+                            <SvgIcon
+                              src="china.svg"
+                              aria-label="homepage"
+                              width="30px"
+                              height="30px"
+                            />
+                          </LanguageSwitch>
+                        </LanguageSwitchContainer>
         </CustomNavLinkSmall>
       </>
     );
