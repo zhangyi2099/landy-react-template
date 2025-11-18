@@ -66,14 +66,14 @@ const Home = () => {
         direction="right"
         title={Product2Content.title}
         content={Product2Content.text}
-        icon="out.jpg"
+        icon="xf.jpg"
         id="product2"
       />
         <ContentBlock
         direction="left"
         title={Product3Content.title}
         content={Product3Content.text}
-        icon="xf.jpg"
+        icon="out.jpg"
         id="product3"
       />
   
