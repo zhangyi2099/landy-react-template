@@ -15,7 +15,6 @@ import {
   Label,
   Outline,
   Span,
-  Language,
   LanguageSwitch,
   LanguageSwitchContainer,
 } from "./styles";
