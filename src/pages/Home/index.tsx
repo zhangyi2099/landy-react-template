@@ -5,7 +5,7 @@ import AboutContent from "../../content/AboutContent.json";
 import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
 
-
+import Product1Content from "../../content/Product1Content.json";
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
@@ -49,6 +49,27 @@ const Home = () => {
         content={ProductContent.text}
         icon="sm.jpg"
         id="product"
+      />
+      <MiddleBlock
+        title={Product1Content.title}
+        content={Product1Content.text}
+        button={''}
+       
+      />
+      <ContentBlock
+        direction="left"
+        title={AboutContent.title}
+        content={AboutContent.text}
+        section={AboutContent.section}
+        icon="cj1.jpg"
+        id="product1"
+      />
+      <ContentBlock
+        direction="right"
+        title={MissionContent.title}
+        content={MissionContent.text}
+        icon="cj2.jpg"
+        id="mission"
       />
   
     </Container>

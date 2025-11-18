@@ -47,13 +47,15 @@ const Footer = ({ t }: { t: TFunction }) => {
             </Col>
             <Col lg={8} md={8} sm={12} xs={12}>
               <Title>{t("Policy")}</Title>
-              <Large to="/">{t("Application Security")}</Large>
-              <Large to="/">{t("Software Principles")}</Large>
+              {/* <Large to="/">{t("Application Security")}</Large>
+              <Large to="/">{t("Software Principles")}</Large> */}
             </Col>
             <Col lg={6} md={6} sm={12} xs={12}>
               <Empty />
-              <Large to="/">{t("Support Center")}</Large>
-              <Large to="/">{t("Customer Support")}</Large>
+              {/* <Large to="/">{t("Support Center")}</Large>
+              <Large to="/">{t("Customer Support")}</Large> */}
+              <Empty></Empty>
+              <Empty />
             </Col>
           </Row>
           <Row justify="space-between">
@@ -113,7 +115,7 @@ const Footer = ({ t }: { t: TFunction }) => {
               </LogoContainer>
             </NavLink>
             <FooterContainer>
-            <p>qsfauto-2025</p>
+            <p>QSFAuto-2025©</p>
             </FooterContainer>
           </Row>
         </Container>
