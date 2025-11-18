@@ -51,11 +51,7 @@ const Home = () => {
         icon="sm.jpg"
         id="product"
       />
-      <Contact
-        title={ContactContent.title}
-        content={ContactContent.text}
-        id="contact"
-      />
+  
     </Container>
   );
 };
