@@ -1,11 +1,14 @@
 import { lazy } from "react";
 import IntroContent from "../../content/IntroContent.json";
-import MiddleBlockContent from "../../content/MiddleBlockContent.json";
+//import MiddleBlockContent from "../../content/MiddleBlockContent.json";
 import AboutContent from "../../content/AboutContent.json";
 import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
+import CurContent from "../../content/CurContent.json";
 
 import Product1Content from "../../content/Product1Content.json";
+import Product2Content from "../../content/Product2Content.json";
+import Product3Content from "../../content/Product3Content.json";
 const MiddleBlock = lazy(() => import("../../components/MiddleBlock"));
 const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
@@ -23,11 +26,7 @@ const Home = () => {
         icon="qsf.jpg"
         id="intro"
       />
-      <MiddleBlock
-        title={MiddleBlockContent.title}
-        content={MiddleBlockContent.text}
-        button={MiddleBlockContent.button}
-      />
+
       <ContentBlock
         direction="left"
         title={AboutContent.title}
@@ -40,36 +39,42 @@ const Home = () => {
         direction="right"
         title={MissionContent.title}
         content={MissionContent.text}
-        icon="cj2.jpg"
+        icon="net.jpg"
         id="mission"
       />
       <ContentBlock
         direction="left"
-        title={ProductContent.title}
-        content={ProductContent.text}
+        title={CurContent.title}
+        content={CurContent.text}
         icon="sm.jpg"
         id="product"
       />
       <MiddleBlock
-        title={Product1Content.title}
-        content={Product1Content.text}
+        title={ProductContent.title}
+        content={ProductContent.text}
         button={''}
        
       />
       <ContentBlock
         direction="left"
-        title={AboutContent.title}
-        content={AboutContent.text}
-        section={AboutContent.section}
+        title={Product1Content.title}
+        content={Product1Content.text}
         icon="cj1.jpg"
         id="product1"
       />
       <ContentBlock
         direction="right"
-        title={MissionContent.title}
-        content={MissionContent.text}
+        title={Product2Content.title}
+        content={Product2Content.text}
         icon="cj2.jpg"
-        id="mission"
+        id="product2"
+      />
+        <ContentBlock
+        direction="left"
+        title={Product3Content.title}
+        content={Product3Content.text}
+        icon="cj1.jpg"
+        id="product3"
       />
   
     </Container>
