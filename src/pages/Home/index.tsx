@@ -59,21 +59,21 @@ const Home = () => {
         direction="left"
         title={Product1Content.title}
         content={Product1Content.text}
-        icon="cj1.jpg"
+        icon="car.jpg"
         id="product1"
       />
       <ContentBlock
         direction="right"
         title={Product2Content.title}
         content={Product2Content.text}
-        icon="cj2.jpg"
+        icon="out.jpg"
         id="product2"
       />
         <ContentBlock
         direction="left"
         title={Product3Content.title}
         content={Product3Content.text}
-        icon="cj1.jpg"
+        icon="xf.jpg"
         id="product3"
       />
   
